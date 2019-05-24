@@ -1,0 +1,88 @@
+<head>
+<title>Linux Quick Reference Page</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<table class="Table-style" style="width:100%">
+</head>
+  <tr>
+    <th>Name</th>
+    <th>Synopsis/Syntax</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>Echo Hello World</td>
+    <td>echo [-n] [string ...]</td>
+    <td>The echo utility writes any specified operands, separated by single blank
+     (` ') characters and followed by a newline (`\n') character, to the stan-
+     dard output.</td>
+    <td>Hello World</td>
+  </tr>
+  <tr>
+    <td>date</td>
+    <td>date [OPTION]... [+FORMAT]
+       date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]</td>
+    <td>Display the current time in the given FORMAT, or set the system date.</td>
+    <td>Fri 3 May 15:32:54 UTC 2019</td>
+  </tr>
+  <tr>
+    <td>hostname</td>
+    <td>hostname [-a|--alias] [-d|--domain] [-f|--fqdn|--long] [-A|--all-fqdns] [-i|--ip-address] [-I|--all-ip-addresses] [-s|--short] [-y|--yp|--nis]
+       hostname [-b|--boot] [-F|--file filename] [hostname]
+       hostname [-h|--help] [-V|--version]
+
+       domainname [nisdomain] [-F file]
+       ypdomainname [nisdomain] [-F file]
+       nisdomainname [nisdomain] [-F file]
+
+       dnsdomainname</td>
+    <td>Hostname is used to display the system's DNS name, and to display or set its hostname or NIS domain name.</td>
+    <td>rpi10</td>
+  </tr>
+  <tr>
+    <td>Uname -a</td>
+    <td>uname [OPTION]...</td>
+    <td>Print certain system information.  With no OPTION, same as -s</td>
+    <td>Linux rpi04 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Linux</td>
+  </tr>
+    <tr>
+    <td>uptime</td>
+    <td>uptime [options]</td>
+    <td>Uptime  gives  a  one line display of the following information.  The current time, how long the system has been running, how many users are currently logged on.$
+    <td>15:44:57 up 14 days, 19:07,  2 users,  load average: 0.34, 0.34, 0.35</td>
+  </tr>
+  <tr>
+    <td>who</td>
+    <td>who [OPTION]... [ FILE | ARG1 ARG2 ]who [OPTION]... [ FILE | ARG1 ARG2 ]</td>
+    <td>Print information about users who are currently logged in.</td>
+    <td>sp1a     pts/0        2019-05-03 15:02 (172.19.215.176)
+sp1b     pts/1        2019-05-03 15:09 (172.19.220.86)</td>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>id [OPTION]... [USER]</td>
+    <td>Print user and group information for the specified USER, or (when USER omitted) for the current user.</td>
+    <td>uid=1003(sp1b) gid=1004(sp1b) groups=1004(sp1b),997(gpio),1007(studentgrp)</td>
+  </tr>
+  <tr>
+    <td>last</td>
+    <td>last [options] [username...] [tty...]
+       lastb [options] [username...] [tty...]</td>
+    <td>last  searches back through the /var/log/wtmp file (or the file designated by the -f option) and displays a list of all users logged in (and out) since that file$
+    <td>sp1b     pts/1        172.19.220.86    Fri May 3 15:09   still logged in</td>
+  </tr>
+  <tr>
+    <td>Arch</td>
+    <td>arch [OPTION]...</td>
+    <td>It prints machine architecture and help display this help and exit.</td>
+    <td>armv7l</td>
+  </tr>
+    <tr>
+    <td>Time</td>
+    <td>time [-lp] utility</td>
+    <td>The time utility executes and times utility.  After the utility finishes, time writes the total time elapsed, the time consumed by system overhead, and the time $
+    <td>real    0m5.368s
+user    0m0.001s
+sys     0m0.006s</td>
+  </tr>
+</table>
+<a href="index.html">Home</a>
