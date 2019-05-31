@@ -3,12 +3,12 @@
 
 echo -e "Content-type: text/html\n\n"
 
-echo "<h1>Raspberry Pi Status: $(hostname)</h1>"
+echo "<h1>Raspberry Pi Status: $rpi10@sp1b</h1>"
 
 echo "<h2>Host Info</h2>"
-echo "<li>Host name : $(hostname)</li>"
-echo "<li>IP Address: $(hostname -I)</li>"
-echo "<li>OS name:    $(grep PRETTY_NAME /etc/os-release | sed 's/.*"\(.*\)"/\1/')</li>"
+echo "<li>Host name : $ rpi10@sp1b</li>"
+echo "<li>IP Address: $ 172.19.200.199</li>"
+echo "<li>OS name:    $ Raspbian GNU/Linux 9 (stretch)</li>"
 
 echo "<h2>Who is logged in</h2>"
 echo "<pre>$(who -a)</pre>"
