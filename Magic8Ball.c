@@ -43,5 +43,5 @@ int main(int argc, char* argv[])
         printf("\n%s\n", answers[rand() % 20]);
     }
     //if (question) free(question);
-    return 0;
+    //return 0;
 }
