@@ -1,10 +1,10 @@
-#include <stdio.h>
+include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
- 
+
 int main(int argc, char* argv[])
 {
-  if (argc != 2)
+ if (argc != 2)
   {
     printf("%s : expected 1 args, please enter a question\n", argv[0]);
     return 1;
@@ -23,25 +23,29 @@ int main(int argc, char* argv[])
         "Outlook good", 
         "Signs point to yes", 
         "Yes",
-        "Reply hazy, try again", 
+        "Reply hazy, try again",
         "Ask again later",
         "Better not tell you now", 
         "Cannot predict now",
         "Concentrate and ask again", 
         "Don't bet on it",
         "My reply is no", 
-        "My sources say no", 
+        "My sources say no",
         "Outlook not so good",
         "Very doubtful"
     };
     srand(time(NULL));
-    printf("Please enter your question or a blank line to quit.\n");
-    while (1) {
-        printf("\n? : ");
+
+    question = argv[1];
+    
+    printf("you asked: %s\n", question);
+    printf("\n%s\n", answers[rand() % 20]);
+
+    /*while (1) {
         read = getline(&question, &len, stdin);
         if (read < 2) break;
         printf("\n%s\n", answers[rand() % 20]);
-    }
-    //if (question) free(question);
-    //return 0;
+    }*/
+//    if (question) free(question);
+    return 0;
 }
